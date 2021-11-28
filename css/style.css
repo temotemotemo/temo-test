@@ -24,6 +24,7 @@
 }
 .menu-ul{
 	display: flex;
+	align-items: center;
 }
 .menu-ul-li{
 	margin-right: 40px;
@@ -32,6 +33,7 @@
 .menu-ul-li-a{
 	color: white;
 }
+
 .menu-wrapper{
 	display: flex;
 	justify-content: center;
@@ -50,6 +52,23 @@
 .button a{
 	color: white;
 }
+.menu-ul-li::after{
+	content: "";
+	display: block;
+	height: 4px;
+	width: 0%;
+	background-color: white;
+	transition: all 0.5s 0.2s;
+	
+}
+.menu-ul-li:hover::after{
+	content: "";
+	display: block;
+	height: 4px;
+	width: 100%;
+	background-color: white;
+}
+
 /* ნავიგაცია */
 
 
@@ -157,4 +176,8 @@
 .main-box-wrapper{
 	display: flex;
 	justify-content: space-around;
+}
+.info-box:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.3s 0.3s;
 }
