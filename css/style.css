@@ -1,10 +1,13 @@
 /* ნავიგაცია */
-.header{
-	background-image: url("../image/Mask.png");
-	background-position: bottom;
+.background{
+	position: absolute;
+	z-index: -1;
 	width: 100%;
-    height: 1095px;
-
+	height: 1008px;
+}
+.background-img{
+	height: 100%;
+	width: 100%;
 }
 
 .logo-image{
@@ -39,6 +42,17 @@
 	justify-content: center;
     align-items: center;
 }
+.nav-button{
+	display: none;
+	width: 41px;
+}
+.line{
+	width: 37px;
+    height: 6px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
 .button{
 	display: flex;
 	justify-content: center;
@@ -175,9 +189,30 @@
 }
 .main-box-wrapper{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }
 .info-box:hover{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transition: all 0.3s 0.3s;
+}
+
+
+
+@media (max-width: 1025px){
+	.menu-wrapper{
+		display: none;
+	}
+	.nav-button{
+		display: block;
+	}
+	.mobile-images-wrapper{
+		display: none;
+	}
+	.container{
+		margin-top: 400px;
+	}
+	.info-box{
+		margin-bottom: 40px;
+	}
 }
