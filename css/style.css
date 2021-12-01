@@ -122,6 +122,8 @@
 	align-items: center;
 }
 .intro-text-wrapper{
+	max-width: 406px;
+	width: 100%;
 	margin-left: 52px;
 }
 .intro-text h1{
@@ -135,6 +137,7 @@
 }
 .buttons{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	margin-top: 33px;
 }
@@ -209,10 +212,20 @@
 	.mobile-images-wrapper{
 		display: none;
 	}
-	.container{
+	/* .container{
 		margin-top: 400px;
-	}
+	} */
 	.info-box{
 		margin-bottom: 40px;
+	}
+	.header{
+		margin-bottom: 152px;
+	} 
+	.background{
+		height: 698px;
+	}
+	.intro-text-wrapper{
+		max-width: 406px;
+		width: 100%;
 	}
 }
